@@ -1,0 +1,115 @@
+@import "compass";
+@import "partials/variables";
+@import "partials/functions";
+@import "partials/normalize";
+
+
+* {
+	@include box-sizing(border-box);
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	color: #565553;
+	font: 16px/1.3125 $helvetica;
+	background: #fff;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::-webkit-input-placeholder {
+	color: #898989;
+}
+
+a {
+	color: #565553;
+	@include transition (all linear .2s);
+
+	&:hover {
+		color: #ea6645;
+	}
+}
+
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {/* */
+	border: none;
+	padding: 0;
+}
+
+#{$all-text-inputs-focus},
+textarea:focus,
+select:focus {
+	border-color: #339999 !important;
+	outline: 0;
+	outline: thin dotted \9;
+	@include transition(border-color linear 0.2s, box-shadow linear 0.2s);
+	//@include box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6));
+}
+
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus {
+	outline: 0;
+}
+
+.clearfix:after {
+	clear: both;
+	display: block;
+	visibility: hidden;
+	height: 0;
+	content: ".";
+	font-size: 0;
+}
+
+.clearfix { zoom: 1; }
+
+.ir {
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+}
+
+.wrapper {
+	overflow: hidden;
+	min-width: 1000px;
+	padding: 0 20px;
+}
+
+.wrap-center {
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+}
+
+
+@import "partials/fonts";
+
+@import "vendor/jquery.fs.selecter";
+@import "vendor/jquery.fancybox";
+
+@import "partials/icons";
+@import "partials/buttons";
+@import "partials/forms";
+
+@import "partials/header";
+@import "partials/content";
+@import "partials/footer";
+
+@import "partials/popups";

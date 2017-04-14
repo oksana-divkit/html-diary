@@ -1,0 +1,192 @@
+/* Header
+-----------------------------------------------------------------------------*/
+
+.header {
+	height: 113px;
+	position: relative;
+}
+
+.logo {
+	position: absolute;
+	top: 10px;
+	left: -2px;
+	width: image-width('logo.png');
+	height: image-height('logo.png');
+	background: url(../img/logo.png);
+
+	&__link {
+		display: block;
+		height: 100%;
+	}
+}
+
+.header-panel {
+	position: absolute;
+	right: 2px;
+	top: 8px;
+}
+
+.socials-list {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 0 15px;
+	float: right;
+
+	&__item {
+		display: inline-block;
+		margin: 0 0 0 8px;
+
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+
+	&__link {
+
+		&:hover {
+			opacity: .7;
+		}
+	}
+}
+
+.header-menu {
+	list-style: none;
+	padding: 0;
+	margin: 6px 0 0;
+	float: right;
+	font: 14px/1.2 $helvetica;
+
+	&__item {
+		display: inline-block;
+		margin: 0 0 0 9px;
+		position: relative;
+
+		&:before {
+			content: '';
+			position: absolute;
+			left: -8px;
+			top: 2px;
+			bottom: 0;
+			width: 1px;
+			background: #585654;
+			border-right: 1px solid #dddddc;
+		}
+
+		&:first-child {
+			margin-left: 0;
+
+			&:before {
+				display: none;
+			}
+		}
+
+		&.active {
+			.header-menu__link {
+				text-decoration: none;
+			}
+		}
+	}
+
+	&__link {
+		color: #585654;
+		text-decoration: underline;
+
+		&:hover {
+			color: #ea6645;
+		}
+	}
+
+	&__drop {
+		position: absolute;
+		top: 100%;
+		right: 0;
+		z-index: 50;
+		margin: 9px 0 0;
+		display: none;
+	}
+}
+
+.main-nav {
+	position: absolute;
+	top: 53px;
+	right: 4px;
+}
+
+.main-menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font: 24px/1.2 $hypatiaSemiBold;
+	letter-spacing: -0.03em;
+
+	&__item {
+		display: inline-block;
+		margin: 0 0 0 26px;
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&.bigger {
+			font: 32px/1.2 $hypatiaBold;
+			letter-spacing: -0.03em;
+		}
+	}
+
+	&__link {
+		text-decoration: none;
+		color: #565553;
+
+		&:hover {
+			color: #ea6645;
+		}
+	}
+
+	&__az {
+		font: 21px/1.2 $hypatiaSemiBold;
+		color: #ea6645;
+		letter-spacing: -0.06em;
+
+		&.blue {
+			color: #339999;
+		}
+	}
+}
+
+.promo-block {
+	position: relative;
+	overflow: hidden;
+	height: 335px;
+	padding: 44px 330px 0 8px;
+	color: #fff;
+	background: #ccc799;
+	margin: 0 0 35px;
+
+	&__pic {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	&__title {
+		margin: 0;
+		position: relative;
+		font: 48px/57px $hypatiaBold;
+		color: #fff;
+		letter-spacing: -0.055em;
+
+		sup {
+			top: -0.6em;
+			font-size: 57%;
+			margin-right: 4px;
+		}
+	}
+
+	&__red {
+		color: #ea6645;
+	}
+
+	&__blue {
+		color: #339999;
+	}
+}

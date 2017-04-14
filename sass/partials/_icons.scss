@@ -1,0 +1,22 @@
+/* Icons
+-----------------------------------------------------------------------------*/
+
+$icon-sprite-dimensions: true;
+//$icon-layout: vertical;
+//$icon-sort-by: 'name';
+$icon-spacing: 4px;
+
+@import "icon/*.png";
+@include all-icon-sprites;
+
+
+.icon-sprite {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.icon-home {
+	margin: 0 2px 0 0;
+	position: relative;
+	top: -3px;
+}

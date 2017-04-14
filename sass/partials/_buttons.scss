@@ -1,0 +1,214 @@
+/* Buttons
+-----------------------------------------------------------------------------*/
+.btn-brown {
+	display: inline-block;
+	border: 0;
+	text-decoration: none;
+	border-radius: 8px;
+	padding: 0 13px 0 7px;
+	height: 26px;
+	color: #ffffff;
+	font: 16px/26px $hypatia;
+	letter-spacing: -0.02em;
+	background: #ccc799;
+
+	&:hover {
+		background: darken(#ccc799, 7%);
+		color: #fff;
+	}
+
+	&:active,
+	&:focus {
+		background: darken(#ccc799, 14%);
+	}
+
+	&__az {
+		color: #ea6645;
+		font-family: $hypatiaBold;
+	}
+}
+
+.btn-red {
+	display: inline-block;
+	border: 0;
+	text-decoration: none;
+	border-radius: 9px;
+	padding: 0 10px;
+	height: 26px;
+	min-width: 100px;
+	text-align: center;
+	color: #ffffff;
+	font: 17px/26px $hypatiaBold;
+	letter-spacing: -0.015em;
+	background: #ea6645;
+	@include transition (all linear .2s);
+
+	&:hover {
+		background: darken(#ea6645, 7%);
+		color: #fff;
+	}
+
+	&:active,
+	&:focus {
+		background: darken(#ea6645, 14%);
+	}
+}
+
+.btn-white {
+	display: inline-block;
+	border: 0;
+	text-decoration: none;
+	border-radius: 10px;
+	padding: 0 10px;
+	height: 26px;
+	min-width: 100px;
+	text-align: center;
+	color: #ea6645;
+	font: 17px/26px $hypatiaBold;
+	background: #fff;
+	@include transition (all linear .2s);
+
+	&:hover {
+		background: #ea6645;
+		color: #fff;
+	}
+
+	&:active,
+	&:focus {
+		background: darken(#ea6645, 14%);
+	}
+}
+
+.btn-white-b {
+	display: inline-block;
+	border: 0;
+	text-decoration: none;
+	border-radius: 11px;
+	padding: 0 10px;
+	height: 26px;
+	min-width: 100px;
+	text-align: center;
+	color: #ea6645;
+	font: 17px/24px $hypatiaBold;
+	letter-spacing: -0.01em;
+	background: #fff;
+	border: 1px solid #565553;
+	@include transition (all linear .2s);
+
+	&:hover {
+		background: #ea6645;
+		color: #fff;
+	}
+
+	&:active,
+	&:focus {
+		background: darken(#ea6645, 14%);
+	}
+}
+
+.btn-brown-w {
+	display: inline-block;
+	border: 0;
+	text-decoration: none;
+	border-radius: 11px;
+	padding: 0 13px;
+	height: 26px;
+	min-width: 100px;
+	text-align: center;
+	color: #9b895c;
+	font: 17px/24px $hypatiaBold;
+	letter-spacing: -0.01em;
+	background: #fff;
+	border: 1px solid #9b895c;
+	@include transition (all linear .2s);
+
+	&:hover {
+		background: #9b895c;
+		color: #fff;
+	}
+
+	&:active,
+	&:focus {
+		background: darken(#9b895c, 14%);
+	}
+}
+
+.btn-blue-w {
+	display: inline-block;
+	border: 0;
+	text-decoration: none;
+	border-radius: 11px;
+	padding: 0 13px;
+	height: 26px;
+	min-width: 100px;
+	text-align: center;
+	color: #339999;
+	font: 17px/24px $hypatiaBold;
+	letter-spacing: -0.01em;
+	background: #fff;
+	border: 1px solid #339999;
+	@include transition (all linear .2s);
+
+	&:hover {
+		background: #339999;
+		color: #fff;
+	}
+
+	&:active,
+	&:focus {
+		background: darken(#339999, 14%);
+	}
+}
+
+.btn-blue {
+	display: inline-block;
+	border: 0;
+	text-decoration: none;
+	border-radius: 11px;
+	padding: 0 13px;
+	height: 26px;
+	min-width: 100px;
+	text-align: center;
+	color: #fff;
+	font: 17px/24px $hypatiaBold;
+	letter-spacing: -0.02em;
+	background: #339999;
+	border: 1px solid #339999;
+	@include transition (all linear .2s);
+
+	&:hover {
+		background: #fff;
+		color: #339999;
+	}
+
+	&:active,
+	&:focus {
+		color: #fff;
+		background: darken(#339999, 14%);
+	}
+}
+
+.link-w-arrow {
+	color: #565553;
+	font: 14px/1.2 $helvetica;
+	text-decoration: underline;
+	position: relative;
+	margin: 0 0 0 10px;
+	vertical-align: bottom;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 4px;
+		left: -10px;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 4px 0 4px 7px;
+		border-color: transparent transparent transparent #ea6645;
+	}
+
+	&:hover {
+		color: #ea6645;
+	}
+}

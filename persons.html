@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Persons - Diary</title>
+	<meta name="viewport" content="width=1000, initial-scale=1.0" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="shortcut icon" href="img/favicon.png" />
+
+	<!--[if IE 8 ]>
+		<link rel="stylesheet" href="css/ie8.css">
+	<![endif]-->
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body>
+
+<div class="wrapper">
+
+	<header class="header wrap-center" role="banner">
+
+		<div class="logo ir">
+			<a href="/" class="logo__link">Logotype.org</a>
+		</div>
+
+		<div class="header-panel">
+			<ul class="socials-list">
+				<li class="socials-list__item">
+					<a href="#" class="socials-list__link icon-social-fb"></a>
+				</li>
+				<li class="socials-list__item">
+					<a href="#" class="socials-list__link icon-social-gp"></a>
+				</li>
+			</ul>
+
+			<ul class="header-menu">
+				<li class="header-menu__item">
+					<a href="#" class="header-menu__link">RUS</a>
+				</li>
+				<li class="header-menu__item active">
+					<a href="#" class="header-menu__link">ENG</a>
+				</li>
+				<li class="header-menu__item">
+					<a href="#" class="header-menu__link">Login</a>
+
+					<div class="header-menu__drop">
+						<form class="login-form">
+							<div class="login-form__line">
+								<label class="login-form__label">Username</label>
+								<input type="text" class="login-form__input" />
+							</div>
+							<div class="login-form__line">
+								<label class="login-form__label">Password</label>
+								<input type="password" class="login-form__input" />
+							</div>
+
+							<footer class="login-form__footer">
+								<a href="#" class="login-form__forgot">Forgot password?</a>
+								
+								<button type="submit" class="btn-red login-form__submit">Log in!</button>
+							</footer>
+						</form>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<nav class="main-nav" role="navigation">
+			<ul class="main-menu">
+				<li class="main-menu__item active">
+					<a href="#" class="main-menu__link"><span class="icon-home"></span> Home</a>
+				</li>
+				<li class="main-menu__item bigger">
+					<a href="#" class="main-menu__link">Persons <span class="main-menu__az">A–Z</span></a>
+				</li>
+				<li class="main-menu__item bigger">
+					<a href="#" class="main-menu__link">Tags <span class="main-menu__az blue">A–Z</span></a>
+				</li>
+				<li class="main-menu__item">
+					<a href="#" class="main-menu__link">Bibliography</a>
+				</li>
+				<li class="main-menu__item">
+					<a href="#" class="main-menu__link">About</a>
+				</li>
+			</ul>
+		</nav>
+
+	</header><!-- .header -->
+
+	<main class="content wrap-center" role="main">
+
+		<div class="search-block person">
+			<form class="search-form">
+				<select class="search-form__lang">
+					<option>English</option>
+					<option>Ukrainian</option>
+					<option>Russian</option>
+					<option>French</option>
+					<option>Very long option in this select must be nicely clipped</option>
+					<option>Italian</option>
+				</select>
+
+				<div class="search-form__col">
+					<h3 class="search-form__title">Show only persons with <br />this keyword:</h3>
+
+					<div class="search-form__keyword">
+						<input type="text" class="search-form__input" placeholder="Enter any keyword" />
+					</div>
+				</div>
+
+				<div class="search-form__col date">
+					<h3 class="search-form__title">Show only persons with diaries after:</h3>
+
+					<div class="search-form__line">
+						<label class="search-form__label">Choose year</label>
+
+						<div class="input-roller">
+							<input type="text" class="input-roller__input" value="18" />
+							<button type="button" class="input-roller__btn up"></button>
+							<button type="button" class="input-roller__btn down"></button>
+						</div>
+						<div class="input-roller one-number">
+							<input type="text" class="input-roller__input" value="1" />
+							<button type="button" class="input-roller__btn up"></button>
+							<button type="button" class="input-roller__btn down"></button>
+						</div>
+						<div class="input-roller one-number">
+							<input type="text" class="input-roller__input" value="4" />
+							<button type="button" class="input-roller__btn up"></button>
+							<button type="button" class="input-roller__btn down"></button>
+						</div>
+					</div>
+
+					<div class="search-form__line last">
+						<label class="search-form__label">Choose <br />day/month</label>
+
+						<div class="input-roller">
+							<input type="text" class="input-roller__input" value="25" />
+							<button type="button" class="input-roller__btn up"></button>
+							<button type="button" class="input-roller__btn down"></button>
+						</div>
+						<div class="input-roller long">
+							<input type="text" class="input-roller__input" value="September" />
+							<button type="button" class="input-roller__btn up"></button>
+							<button type="button" class="input-roller__btn down"></button>
+						</div>
+					</div>
+				</div>
+
+				<div class="search-form__col last">
+					<button type="reset" class="search-form__reset">Reset all</button>
+					<button type="submit" class="btn-white search-form__submit">Search!</button>
+				</div>
+			</form>
+
+			<ul class="tags-list">
+				<li class="tags-list__item">
+					Juri <span class="tags-list__matched">Mueller</span>
+					<span class="tags-list__remove"></span>
+				</li>
+				<li class="tags-list__item">
+					Boris <span class="tags-list__matched">Xyz</span>
+					<span class="tags-list__remove"></span>
+				</li>
+			</ul>
+		</div>
+
+		<div class="person-panel">
+			<ul class="person-alphabet">
+				<li class="person-alphabet__item active">
+					<a href="#" class="person-alphabet__link">A–H</a>
+				</li>
+				<li class="person-alphabet__item">
+					<a href="#" class="person-alphabet__link">I–P</a>
+				</li>
+				<li class="person-alphabet__item">
+					<a href="#" class="person-alphabet__link">Q–Z</a>
+				</li>
+			</ul>
+
+			<label class="person-panel__check-all">
+				<input type="checkbox" class="small-check person-panel__check" />Select all
+			</label>
+
+			<button type="button" class="btn-red person-panel__show">Show selection</button>
+
+			<button type="button" class="btn-white-b person-panel__create-new">Create new person</button>
+		</div>
+
+		<ul class="persons-list">
+			<li class="persons-list__item">
+				<div class="persons-list__letter">a</div>
+
+				<div class="persons-list__person">
+					<div class="persons-list__check-col">
+						<input type="checkbox" class="small-check persons-list__check" />
+					</div>
+
+					<figure class="persons-list__photo">
+						<img src="pic/person3.jpg" height="140" width="140" alt="" title="" />
+					</figure>
+
+					<div class="persons-list__info">
+						<h2 class="persons-list__title">Juri Jonathan <span class="persons-list__surname">Antonow</span></h2>
+
+						<p class="persons-list__p">15 April 1905 – 12 May 1977 <br/>Karate Teacher</p>
+					</div>
+
+					<ul class="person-links">
+						<li class="person-links__item">
+							<a href="#" class="link-w-arrow person-links__link">Go to person‘s page</a>
+						</li>
+						<li class="person-links__item">
+							<a href="#" class="link-w-arrow person-links__link">Show diary</a> (123 notes)
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li class="persons-list__item">
+				<div class="persons-list__letter">b</div>
+
+				<div class="persons-list__person">
+					<div class="persons-list__check-col">
+						<input type="checkbox" class="small-check persons-list__check" />
+					</div>
+
+					<figure class="persons-list__photo">
+						<img src="pic/person1.jpg" height="140" width="140" alt="" title="" />
+					</figure>
+
+					<div class="persons-list__info">
+						<h2 class="persons-list__title">Roberto Ivan <span class="persons-list__surname">Beloussow</span></h2>
+
+						<p class="persons-list__p">5 April 1901 –  1 May 1964 <br />Jazzmusician</p>
+					</div>
+
+					<ul class="person-links">
+						<li class="person-links__item">
+							<a href="#" class="link-w-arrow person-links__link">Go to person‘s page</a>
+						</li>
+						<li class="person-links__item">
+							<a href="#" class="link-w-arrow person-links__link">Show diary</a> (161 notes)
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li class="persons-list__item">
+				<div class="persons-list__letter">c</div>
+
+				<div class="persons-list__person">
+					<div class="persons-list__check-col">
+						<input type="checkbox" class="small-check persons-list__check" />
+					</div>
+
+					<figure class="persons-list__photo">
+						<img src="pic/person2.jpg" height="140" width="140" alt="" title="" />
+					</figure>
+
+					<div class="persons-list__info">
+						<h2 class="persons-list__title">Anton <span class="persons-list__surname">CARLSON</span></h2>
+
+						<p class="persons-list__p">13 August 1898 – 28 February 1943 <br />Baker</p>
+					</div>
+
+					<ul class="person-links">
+						<li class="person-links__item">
+							<a href="#" class="link-w-arrow person-links__link">Go to person‘s page</a>
+						</li>
+						<li class="person-links__item">
+							<a href="#" class="link-w-arrow person-links__link">Show diary</a> (11 notes)
+						</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+
+
+	</main><!-- .content -->
+
+	<footer class="footer wrap-center" role="contentinfo">
+		<div class="logo-s ir">
+			<a href="/" class="logo-s__link">Logotype.org</a>
+		</div>
+
+		<ul class="footer-menu">
+			<li class="footer-menu__item active">
+				<a href="#" class="footer-menu__link">Home</a>
+			</li>
+			<li class="footer-menu__item">
+				<a href="#" class="footer-menu__link">Persons <span class="footer-menu__az">A–Z</span></a>
+			</li>
+			<li class="footer-menu__item">
+				<a href="#" class="footer-menu__link">Tags <span class="footer-menu__az blue">A–Z</span></a>
+			</li>
+			<li class="footer-menu__item">
+				<a href="#" class="footer-menu__link">Bibliography</a>
+			</li>
+			<li class="footer-menu__item">
+				<a href="#" class="footer-menu__link">About</a>
+			</li>
+			<li class="footer-menu__item">
+				<a href="#" class="footer-menu__link">Contact</a>
+			</li>
+			<li class="footer-menu__item">
+				<a href="#" class="footer-menu__link">Imprint</a>
+			</li>
+		</ul>
+
+		<div class="to-top"></div>
+	</footer><!-- .footer -->
+
+</div><!-- .wrapper -->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

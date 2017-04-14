@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Main - Diary</title>
+	<meta name="viewport" content="width=1000, initial-scale=1.0" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="shortcut icon" href="img/favicon.png" />
+
+	<!--[if IE 8 ]>
+		<link rel="stylesheet" href="css/ie8.css">
+	<![endif]-->
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body>
+
+<div class="wrapper">
+
+	<header class="header wrap-center" role="banner">
+
+		<div class="logo ir">
+			<a href="/" class="logo__link">Logotype.org</a>
+		</div>
+
+		<div class="header-panel">
+			<ul class="socials-list">
+				<li class="socials-list__item">
+					<a href="#" class="socials-list__link icon-social-fb"></a>
+				</li>
+				<li class="socials-list__item">
+					<a href="#" class="socials-list__link icon-social-gp"></a>
+				</li>
+			</ul>
+
+			<ul class="header-menu">
+				<li class="header-menu__item">
+					<a href="#" class="header-menu__link">RUS</a>
+				</li>
+				<li class="header-menu__item active">
+					<a href="#" class="header-menu__link">ENG</a>
+				</li>
+				<li class="header-menu__item">
+					<a href="#" class="header-menu__link">Login</a>
+
+					<div class="header-menu__drop">
+						<form class="login-form">
+							<div class="login-form__line">
+								<label class="login-form__label">Username</label>
+								<input type="text" class="login-form__input" />
+							</div>
+							<div class="login-form__line">
+								<label class="login-form__label">Password</label>
+								<input type="password" class="login-form__input" />
+							</div>
+
+							<footer class="login-form__footer">
+								<a href="#" class="login-form__forgot">Forgot password?</a>
+								
+								<button type="submit" class="btn-red login-form__submit">Log in!</button>
+							</footer>
+						</form>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<nav class="main-nav" role="navigation">
+			<ul class="main-menu">
+				<li class="main-menu__item active">
+					<a href="#" class="main-menu__link"><span class="icon-home"></span> Home</a>
+				</li>
+				<li class="main-menu__item bigger">
+					<a href="#" class="main-menu__link">Persons <span class="main-menu__az">A–Z</span></a>
+				</li>
+				<li class="main-menu__item bigger">
+					<a href="#" class="main-menu__link">Tags <span class="main-menu__az blue">A–Z</span></a>
+				</li>
+				<li class="main-menu__item">
+					<a href="#" class="main-menu__link">Bibliography</a>
+				</li>
+				<li class="main-menu__item">
+					<a href="#" class="main-menu__link">About</a>
+				</li>
+			</ul>
+		</nav>
+
+	</header><!-- .header -->
+
+	<main class="content wrap-center" role="main">
+
+		<div class="promo-block">
+			<img class="promo-block__pic" src="pic/promo-pic1.jpg" height="335" width="603" alt="" title="" />
+
+			<h1 class="promo-block__title">Find <span class="promo-block__red">diaries</span> of people <br />from the <span class="promo-block__blue">18<sup>th</sup> to the 21<sup>st</sup> century</span> on our website and upload diaries yourself...</h1>
+		</div>
+
+		<div class="search-block">
+			<form class="search-form">
+				<select class="search-form__lang">
+					<option>English</option>
+					<option>Ukrainian</option>
+					<option>Russian</option>
+					<option>French</option>
+					<option>Very long option in this select must be nicely clipped</option>
+					<option>Italian</option>
+				</select>
+
+				<div class="search-form__col">
+					<h3 class="search-form__title">Search person …</h3>
+
+					<div class="search-form__person">
+						<input type="text" class="search-form__input" placeholder="Enter last name" />
+						<button type="button" class="search-form__add-person">+</button>
+						<label class="search-form__person-label">Add to list below for multiple names</label>
+					</div>
+
+					<h4 class="search-form__subtitle">Or browse … </h4>
+					<a href="#" class="btn-brown">…Persons <span class="btn-brown__az">A–Z</span></a>
+				</div>
+
+				<div class="search-form__col">
+					<h3 class="search-form__title">… <u>and/or</u> search date …</h3>
+
+					<label class="search-form__date-label">
+						<input type="checkbox" class="base-check" />Yes, search date
+					</label>
+
+					<div class="search-form__line">
+						<label class="search-form__label">Choose year</label>
+
+						<div class="input-roller">
+							<input type="text" class="input-roller__input" value="20" />
+							<button type="button" class="input-roller__btn up"></button>
+							<button type="button" class="input-roller__btn down"></button>
+						</div>
+						<div class="input-roller one-number">
+							<input type="text" class="input-roller__input" value="1" />
+							<button type="button" class="input-roller__btn up"></button>
+							<button type="button" class="input-roller__btn down"></button>
+						</div>
+						<div class="input-roller one-number">
+							<input type="text" class="input-roller__input" value="4" />
+							<button type="button" class="input-roller__btn up"></button>
+							<button type="button" class="input-roller__btn down"></button>
+						</div>
+					</div>
+
+					<div class="search-form__line">
+						<label class="search-form__label">Choose day/month</label>
+
+						<div class="input-roller">
+							<input type="text" class="input-roller__input" value="25" />
+							<button type="button" class="input-roller__btn up"></button>
+							<button type="button" class="input-roller__btn down"></button>
+						</div>
+						<div class="input-roller long">
+							<input type="text" class="input-roller__input" value="June" />
+							<button type="button" class="input-roller__btn up"></button>
+							<button type="button" class="input-roller__btn down"></button>
+						</div>
+					</div>
+				</div>
+
+				<div class="search-form__col last">
+					<h3 class="search-form__title">… <u>and/or</u> search keyword.</h3>
+
+					<div class="search-form__keyword">
+						<input type="text" class="search-form__input" placeholder="Type any keyword" />
+					</div>
+
+					<div class="search-form__footer">
+						<button type="reset" class="search-form__reset">Reset all</button>
+						<button type="submit" class="btn-red search-form__submit">Search!</button>
+					</div>
+				</div>
+			</form>
+
+			<ul class="tags-list">
+				<li class="tags-list__item">
+					Juri <span class="tags-list__matched">Mueller</span>
+					<span class="tags-list__remove"></span>
+				</li>
+				<li class="tags-list__item">
+					Boris <span class="tags-list__matched">Xyz</span>
+					<span class="tags-list__remove"></span>
+				</li>
+			</ul>
+		</div>
+
+		<ul class="articles-list">
+			<li class="articles-list__item">
+				<h2 class="articles-list__year">1954</h2>
+
+				<figure class="articles-list__photo">
+					<img src="pic/person1.jpg" height="140" width="140" alt="" title="" />
+
+					<figcaption class="articles-list__caption">
+						<span class="articles-list__name">Juri <span class="articles-list__surname">Mueller</span></span>
+						Born 1901, April 5
+					</figcaption>
+				</figure>
+
+				<div class="articles-list__descr">
+					<p class="articles-list__p"><span class="articles-list__date">— 26 June</span> Occum cusda cus dolupta tiosam nonem fugiti aditas paritat mi, none nus rem quam eiur, sit, secuscidiaes molorest vendige nducia conem quodicil modigen ectius unt aliquia Occum cusda cus dolupta tiosam nonem fugiti aditas paritat mi, none nus rem quam eiur, sit, secuscidiaes molorest vendige nducia conem quodicil modigen ectius unt aliquia vit omnistisimus sit ant estio vent eum nonsequis dolo etusam secte <a href="#" class="link-tooltip" data-username="Username" data-date="03. July 2014" data-comment="dolupta tiosam nonem fugiti aditas paritat mi, none nus rem quam eiur, sit, secuscidiaes molorest vendige nducia conem quodicil modigen ectius unt aliquia vit omnistisimus sit ant estio vent eum nonsequis">laborectum</a> fuga. Ed ut ditat. Occum cusda cus dolupta tiosam nonem fugiti aditas paritat mi, none nus rem quam eiur, sit, secuscidiaes molorest vendige nducia conem quodicil modigen ectius unt aliquia vit omnistisimus sit ant estio vent eum nonsequis dolo etusam secte laborectum fuga. Ed ut ditat. Occum cusda cus dolupta tiosam nonem fugiti aditas paritat mi, none nus rem quam eiur, sit, secuscidiaes molorest vendige nducia conem quodicil modigen ectius unt aliquia vit omnistisimus sit ant estio vent eum nonsequis dolo paritat mi, none nus rem quam eiur, sit, secusciant estio vent eum nonsequis dolo etusam secte laborectum fuga.</p>
+
+					<div class="more-block">
+						<p class="articles-list__p">at mi, none nus rem quam eiur, sit, secuscidiaes molorest vendige nducia conem quodicil modigen ectius unt aliquia vit omnistisimus sit ant estio vent eum nonsequis dolo paritat mi, none nus rem quam eiur, sit, secuscidiaes molorest vendige nducia conem quodicil modigen ectius unt aliquia vit omnistisimus sit ant estio vent eum nonsequis dolo etusam secte laborectum fuga.</p>
+						<p class="articles-list__p">tat mi, none nus rem quam eiur, sit, secuscidiaes molorest v</p>
+					</div>
+
+					<footer class="articles-list__footer">
+						<a href="#" class="btn-red articles-list__more">Read more</a>
+					</footer>
+				</div>
+
+				<div class="articles-list__close"></div>
+			</li>
+			<li class="articles-list__item">
+				<h2 class="articles-list__year">1912</h2>
+
+				<figure class="articles-list__photo">
+					<img src="pic/person2.jpg" height="140" width="140" alt="" title="" />
+
+					<figcaption class="articles-list__caption">
+						<span class="articles-list__name">Boris <span class="articles-list__surname">Xyz</span></span>
+						Born 1885, April 8
+					</figcaption>
+				</figure>
+
+				<div class="articles-list__descr">
+					<p class="articles-list__p"><span class="articles-list__date">— 5 August</span> Ed ut ditat. Occum cusda cus dolupta tiosam nonem fugiti aditas paritat mi, none nus rem quam eiur, sit, secuscidiaes molorest vendige nducia conem quodicil modigen ectius unt aliquia vit omnistisimus sit ant estio vent eum nonsequis dolo etusam secte laborectum fuga. <a href="#" class="link-tooltip" data-username="Username" data-date="03. July 2014" data-comment="dolupta tiosam nonem fugiti aditas paritat mi, none nus rem quam eiur, sit, secuscidisequis">Ed</a> ut ditat. </p>
+					<p class="articles-list__p">Cusda cus dolupta tiosam nonem fugiti aditas paritat mi, none nus rem quam eiur, sit, secuscidiaes molorest vendige nducia conem quodicil modigen ectius unt aliquia.</p>
+					<p class="articles-list__p">Occum cusda cus dolupta tiosam nonem fugiti aditas paritat mi, none nus rem quam eiur, sit, secuscidiaes molorest vendige nducia conem quodicil modigen ectius unt aliquia vit omnis <br />Secuscidiaes molorest vendige nducia conem quodicil modigen ectius unt aliquia vit omnistisimus sit ant estio vent eum nonsequis dolo etusam secte laborectum fuga.Ed ut ditat.</p>
+
+					<div class="more-block">
+						<p class="articles-list__p">at mi, none nus rem quam eiur, sit, secuscidiaes molorest vendige nducia conem quodicil modigen ectius unt aliquia vit omnistisimus sit ant estio vent eum nonsequis dolo paritat mi, none nus rem quam eiur, sit, secuscidiaes molorest vendige nducia conem quodicil modigen ectius unt aliquia vit omnistisimus sit ant estio vent eum nonsequis dolo etusam secte laborectum fuga.</p>
+						<p class="articles-list__p">tat mi, none nus rem quam eiur, sit, secuscidiaes molorest v</p>
+					</div>
+
+					<footer class="articles-list__footer">
+						<a href="#" class="btn-red articles-list__more">Read more</a>
+					</footer>
+				</div>
+
+				<div class="articles-list__close"></div>
+			</li>
+		</ul>
+
+	</main><!-- .content -->
+
+	<footer class="footer wrap-center" role="contentinfo">
+		<div class="logo-s ir">
+			<a href="/" class="logo-s__link">Logotype.org</a>
+		</div>
+
+		<ul class="footer-menu">
+			<li class="footer-menu__item active">
+				<a href="#" class="footer-menu__link">Home</a>
+			</li>
+			<li class="footer-menu__item">
+				<a href="#" class="footer-menu__link">Persons <span class="footer-menu__az">A–Z</span></a>
+			</li>
+			<li class="footer-menu__item">
+				<a href="#" class="footer-menu__link">Tags <span class="footer-menu__az blue">A–Z</span></a>
+			</li>
+			<li class="footer-menu__item">
+				<a href="#" class="footer-menu__link">Bibliography</a>
+			</li>
+			<li class="footer-menu__item">
+				<a href="#" class="footer-menu__link">About</a>
+			</li>
+			<li class="footer-menu__item">
+				<a href="#" class="footer-menu__link">Contact</a>
+			</li>
+			<li class="footer-menu__item">
+				<a href="#" class="footer-menu__link">Imprint</a>
+			</li>
+		</ul>
+
+		<div class="to-top"></div>
+	</footer><!-- .footer -->
+
+
+	<div class="tooltip-block">
+		<header class="tooltip-block__header">
+			<a href="#" class="tooltip-block__username"></a>
+			<span class="tooltip-block__date"></span>
+		</header>
+
+		<h6 class="tooltip-block__title">Comment:</h6>
+		<p class="tooltip-block__comment"></p>
+	</div><!-- .tooltip-block -->
+
+</div><!-- .wrapper -->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

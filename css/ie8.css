@@ -1,0 +1,19 @@
+.selecter .selecter-element {
+	display: none;
+}
+
+.search-form__input {
+	line-height: 24px;
+}
+
+.input-roller__input {
+	line-height: 24px;
+}
+
+.login-form__input {
+	line-height: 20px;
+}
+
+.create-form__input {
+	line-height: 29px;
+}

@@ -1,0 +1,20 @@
+/* Popups
+-----------------------------------------------------------------------------*/
+
+.popup-wrap {
+	display: none;
+}
+
+.popup-block {
+	width: 576px;
+	padding: 14px 27px 49px 20px;
+	background: #fff;
+	border: 1px solid #565553;
+	box-shadow: 0 0 9px 0 rgba(#000, .65);
+}
+
+.popup-title {
+	margin: 0 0 1px;
+	color: #339999;
+	font: 48px/1 $hypatia;
+}
